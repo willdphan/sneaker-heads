@@ -14,6 +14,6 @@ Sign in with your wallet and lazy mint your NFTs for free. Stake and withdraw yo
 
 > Stake and claim rewards.
 
-Using OpenZeppelin's ERC20, ERC721, SafeERC20, and ReentrancyGuard contracts, the Mint contract consists of a simple `mint(uint256 amount)` function that provides a conversion from ETH to Dropp coin with `require(msg.value == amount * 0.0001 ether, "invalid amount of ether")` and `_mint(msg.sender, amount)`.
+Using OpenZeppelin's ERC20, ERC721, SafeERC20, and ReentrancyGuard contracts, the Mint contract consists of `stake(uint256 _tokenId)`, `withdraw(uint256 _tokenId)`, `claimRewards()`, `availableRewards(address _staker)`, `getStakedTokens(address _user)`, and `calculateRewards(address _staker)` functions.
 
 [Contract Source](contracts/DroppCoin.sol)

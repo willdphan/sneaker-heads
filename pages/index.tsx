@@ -1,10 +1,12 @@
-import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react';
-import type { NextPage } from 'next';
+import { useAddress, useDisconnect, useMetamask } from "@thirdweb-dev/react";
+import type { NextPage } from "next";
+// import "./styles/home_module.css";
 
 const Home: NextPage = () => {
   const address = useAddress();
   const connectWithMetamask = useMetamask();
   const disconnectWallet = useDisconnect();
+
   return (
     <div>
       {address ? (

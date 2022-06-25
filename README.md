@@ -1,28 +1,19 @@
-## Getting Started
+# Sneaker Head NFT Mint and Stake
 
-Create a project using this example:
+<p align="center">
+<img width="600" alt="Screen Shot 2022-06-24 at 7 00 47 PM" src="https://user-images.githubusercontent.com/95723185/175720991-938da6b4-e263-4f15-8702-2002619c10b7.png">
+  <p/>
 
-```bash
-npx create-tw-app --example next-typescript-starter
-```
+> Mint Sneaker Head NFTs!
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Sign in with your wallet and lazy mint your NFTs for free. Stake and withdraw your NFTs anytime! Built with the ThirdWeb SDK.
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our hooks to work.
+<p align="center">
+<img width="600" src="https://user-images.githubusercontent.com/95723185/175720862-c3a0eafb-7220-4be1-a544-842907e62579.gif" alt="animated" />
+</p>
 
-on `pages/index.tsx`, you'll find the `useMetamask` hook that we use to connect the user's wallet to MetaMask, `useDisconnect` that we use to disconnect it, and `useAddress` to check the user's wallet address once connected. 
+> Stake and claim rewards.
 
-## Learn More
+Using OpenZeppelin's ERC20, ERC721, SafeERC20, and ReentrancyGuard contracts, the Mint contract consists of a simple `mint(uint256 amount)` function that provides a conversion from ETH to Dropp coin with `require(msg.value == amount * 0.0001 ether, "invalid amount of ether")` and `_mint(msg.sender, amount)`.
 
-To learn more about thirdweb and Next.js, take a look at the following resources:
-
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+[Contract Source](contracts/DroppCoin.sol)

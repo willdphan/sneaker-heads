@@ -16,4 +16,4 @@ Sign in with your wallet and lazy mint your NFTs for free. Stake and withdraw yo
 
 Using OpenZeppelin's ERC20, ERC721, SafeERC20, and ReentrancyGuard contracts, the Mint contract consists of `stake(uint256 _tokenId)`, `withdraw(uint256 _tokenId)`, `claimRewards()`, `availableRewards(address _staker)`, `getStakedTokens(address _user)`, and `calculateRewards(address _staker)` functions.
 
-[Contract Source](contracts/DroppCoin.sol)
+[Contract Source](contracts/nftstaking.sol)

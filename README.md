@@ -17,7 +17,3 @@ Sign in with your wallet and lazy mint your NFTs for free. Stake and withdraw yo
 Using OpenZeppelin's ERC20, ERC721, SafeERC20, and ReentrancyGuard contracts, the Mint contract consists of a simple `mint(uint256 amount)` function that provides a conversion from ETH to Dropp coin with `require(msg.value == amount * 0.0001 ether, "invalid amount of ether")` and `_mint(msg.sender, amount)`.
 
 [Contract Source](contracts/DroppCoin.sol)
-
-## License
-
-This app is open-source and licensed under the MIT license. For more details, check the [License file](LICENSE).
